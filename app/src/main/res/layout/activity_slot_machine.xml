@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#0F99CA"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/flipperLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/play"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ViewFlipper
+            android:id="@+id/reel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/coffee_maker"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/coffee_maker" />
+
+            <ImageView
+                android:id="@+id/tea_pot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/teapot" />
+
+            <ImageView
+                android:id="@+id/espresso_machine"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/espresso_mc" />
+        </ViewFlipper>
+
+        <ViewFlipper
+            android:id="@+id/reel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/coffee_filter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/coffee_filter" />
+
+            <ImageView
+                android:id="@+id/tea_strainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/teastrainer" />
+
+            <ImageView
+                android:id="@+id/espresso_tamper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/espresso_tamper" />
+        </ViewFlipper>
+
+        <ViewFlipper
+            android:id="@+id/reel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/coffee_grounds"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/coffee_grounds" />
+
+            <ImageView
+                android:id="@+id/loose_tea"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/loose_tea" />
+
+            <ImageView
+                android:id="@+id/ground_espresso_beans"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/espresso_beans" />
+        </ViewFlipper>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Play"
+        android:layout_alignParentBottom="true"
+        android:textSize="28sp" />
+</RelativeLayout>
